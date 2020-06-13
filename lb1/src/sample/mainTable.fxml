@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MainController">
+    <children>
+        <TableView fx:id="tableEditions" layoutX="389.0" onMouseClicked="#showRow" prefHeight="556.0" prefWidth="640.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="143.0" resizable="false" text="Name" />
+                <TableColumn fx:id="emailColumn" prefWidth="140.0" resizable="false" text="Email" />
+                <TableColumn fx:id="remoteWorkColumn" minWidth="0.0" prefWidth="133.0" resizable="false" text="Remote Work" />
+                <TableColumn fx:id="qualityColumn" prefWidth="93.0" resizable="false" text="Quality" />
+                <TableColumn fx:id="dateColumn" prefWidth="125.0" text="Date of start" />
+            </columns>
+        </TableView>
+        <Button fx:id="addButton" layoutX="137.0" layoutY="517.0" mnemonicParsing="false" onAction="#createNewRec" prefHeight="27.0" prefWidth="119.0" text="Add" />
+        <Button fx:id="saveButton" layoutX="261.0" layoutY="517.0" mnemonicParsing="false" onAction="#saveNewRec" prefHeight="27.0" prefWidth="119.0" text="Save" />
+        <Button fx:id="deleteButton" layoutX="11.0" layoutY="517.0" mnemonicParsing="false" onAction="#deleteRow" prefHeight="27.0" prefWidth="119.0" text="Delete" />
+        <ComboBox fx:id="classComboBox" layoutX="113.0" layoutY="21.0" onAction="#generateFields" prefHeight="25.0" prefWidth="194.0" />
+        <TextField fx:id="emailTextField" layoutX="200.0" layoutY="97.0" prefHeight="25.0" prefWidth="182.0" />
+        <TextField fx:id="nameTextField" layoutX="200.0" layoutY="60.0" prefHeight="25.0" prefWidth="182.0" />
+        <CheckBox fx:id="remoteWorkCheckBox" layoutX="200.0" layoutY="137.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="77.0" />
+        <Label fx:id="nameLabel" layoutX="31.0" layoutY="64.0" prefHeight="17.0" prefWidth="119.0" text="Name" />
+        <Label fx:id="emailLabel" layoutX="31.0" layoutY="101.0" prefHeight="17.0" prefWidth="119.0" text="Email" />
+        <Label fx:id="remoteWorkLabel" layoutX="31.0" layoutY="137.0" prefHeight="17.0" prefWidth="119.0" text="Remote Work" />
+        <Separator layoutX="15.0" layoutY="238.0" prefHeight="17.0" prefWidth="371.0" />
+        <Label fx:id="startWorkDateLabel" layoutX="31.0" layoutY="167.0" prefHeight="27.0" prefWidth="119.0" text="Date of start work" />
+        <DatePicker fx:id="startWorkDatePicker" editable="false" layoutX="200.0" layoutY="163.0" prefHeight="10.0" prefWidth="182.0" />
+        <Label fx:id="manageLabel" layoutX="31.0" layoutY="270.0" prefHeight="17.0" prefWidth="119.0" text="Age Category" visible="false" />
+        <ComboBox fx:id="manageComboBox" layoutX="200.0" layoutY="266.0" prefHeight="25.0" prefWidth="182.0" visible="false" />
+        <Label fx:id="typeLabel" layoutX="31.0" layoutY="270.0" prefHeight="17.0" prefWidth="119.0" text="Programming Type" visible="false" />
+        <ComboBox fx:id="typeComboBox" layoutX="200.0" layoutY="266.0" prefHeight="25.0" prefWidth="182.0" visible="false" />
+        <Label fx:id="educationLabel" layoutX="31.0" layoutY="304.0" prefHeight="17.0" prefWidth="119.0" text="Higher Education" visible="false" />
+        <CheckBox fx:id="educationCheckBox" layoutX="202.0" layoutY="304.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="77.0" visible="false" />
+        <Label fx:id="authorLabel" layoutX="31.0" layoutY="270.0" prefHeight="17.0" prefWidth="119.0" text="Author" visible="false" />
+        <TextField fx:id="authorTextField" layoutX="200.0" layoutY="266.0" prefHeight="25.0" prefWidth="182.0" visible="false" />
+        <Label fx:id="pageNumLabel" layoutX="31.0" layoutY="304.0" prefHeight="17.0" prefWidth="119.0" text="Page Number" visible="false" />
+        <TextField fx:id="pageNumTextField" layoutX="200.0" layoutY="300.0" prefHeight="25.0" prefWidth="60.0" visible="false" />
+        <Label fx:id="officeLabel" layoutX="31.0" layoutY="333.0" prefHeight="17.0" prefWidth="119.0" text="Office" visible="false" />
+        <TextField fx:id="officeTextField" layoutX="200.0" layoutY="329.0" prefHeight="25.0" prefWidth="60.0" visible="false" />
+        <Label fx:id="sphereLabel" layoutX="31.0" layoutY="273.0" prefHeight="17.0" prefWidth="119.0" text="Sphere" visible="false" />
+        <ComboBox fx:id="sphereComboBox" layoutX="200.0" layoutY="266.0" prefHeight="17.0" prefWidth="182.0" visible="false" />
+        <ComboBox fx:id="DesignerComboBox" layoutX="200.0" layoutY="266.0" prefHeight="17.0" prefWidth="182.0" visible="false" />
+        <ComboBox fx:id="qualityComboBox" layoutX="200.0" layoutY="359.0" prefHeight="17.0" prefWidth="182.0" visible="false" />
+        <Label fx:id="qualityLabel" layoutX="31.0" layoutY="364.0" prefHeight="17.0" prefWidth="119.0" text="Quality" visible="false" />
+    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
